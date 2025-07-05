@@ -1,0 +1,12 @@
+<div
+  class="max-w-md mx-auto flex items-center gap-2 p-2 rounded-md border border-gray-300"
+>
+  <i class="fa-solid fa-magnifying-glass text-gray-400"></i>
+  <input
+    #txtSearch
+    type="text"
+    placeholder="Buscar por título o contenido..."
+    class="w-full focus:outline-none"
+    (keyup)="search(txtSearch.value)"
+  />
+</div>
